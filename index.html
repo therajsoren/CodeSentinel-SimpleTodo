@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="max-w-md w-full bg-white rounded-xl shadow-lg p-6 md:p-8">
+      <div class="text-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-800">My To-Do List</h1>
+        <p class="text-gray-500">Stay organized and productive.</p>
+      </div>
+
+      <form id="add-task-form" class="flex gap-3 mb-6">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Add a new task..."
+          class="flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+        />
+        <button
+          type="submit"
+          class="bg-indigo-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 transition"
+        >
+          Add
+        </button>
+      </form>
+
+      <ul id="task-list" class="space-y-3">
+        <li
+          class="task-item flex items-center justify-between bg-gray-100 p-4 rounded-lg"
+        >
+          <span class="text-gray-700">This is an example task</span>
+          <button class="delete-btn text-red-500 hover:text-red-700 transition">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

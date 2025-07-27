@@ -29,6 +29,7 @@ CodeSentinel_simpleTodo/
   ├── index.html
   ├── script.js
   ├── style.css
+  ├── assests/image.jpg
 ```
 
 ## Usage
@@ -38,7 +39,7 @@ CodeSentinel_simpleTodo/
 
 ## Screenshot
 
-![App Screenshot](../task-3/assests/image.jpg)
+![App Screenshot](assests/image.png)
 
 ## License
 
